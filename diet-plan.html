@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>30天详细饮食计划 - 30天减肥计划</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <a href="index.html" class="navbar-logo">30天减肥计划</a>
+      <button class="navbar-toggle">☰</button>
+      <ul class="navbar-menu">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="science.html">减肥科学</a></li>
+        <li><a href="diet.html" class="active">饮食计划</a></li>
+        <li><a href="exercise.html">运动计划</a></li>
+        <li><a href="progress.html">进度跟踪</a></li>
+        <li><a href="faq.html">常见问题</a></li>
+        <li><a href="about.html">关于</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 横幅 -->
+  <div class="banner">
+    <div class="container">
+      <h1>30天详细饮食计划</h1>
+      <p>每日详细饮食安排，帮助你科学控制热量摄入，保持营养均衡</p>
+    </div>
+  </div>
+
+  <!-- 主要内容 -->
+  <main class="container">
+    <!-- 日期选择器 -->
+    <div class="date-selector">
+      <div class="date-selector-nav">
+        <button class="date-selector-prev" disabled>◀</button>
+        <div class="date-selector-current">第1周</div>
+        <button class="date-selector-next">▶</button>
+      </div>
+    </div>
+    
+    <!-- 周计划内容 -->
+    <div id="week-1" class="week-plan">
+      <h2>第1周：适应期（第1-7天）</h2>
+      <p>这一周的目标是逐步调整饮食习惯，热量适度控制在2000-2100卡路里。重点是增加蛋白质摄入，减少精制碳水化合物和添加糖。</p>
+      
+      <!-- 第1天 -->
+      <div class="plan-card">
+        <div class="plan-card-header">
+          <div class="plan-card-title">第1天</div>
+          <div class="plan-card-date">适应期</div>
+        </div>
+        
+        <div class="plan-card-section">
+          <div class="plan-card-section-title">早餐（约500卡路里）</div>
+          <ul class="plan-card-list">
+            <li>燕麦粥（40克干燕麦）</li>
+            <li>2个煮鸡蛋（只吃1个蛋黄）</li>
+            <li>1个小苹果</li>
+            <li>1杯无糖豆浆（250ml）</li>
+          </ul>
+        </div>
+        
+        <div class="plan-card-section">
+          <div class="plan-card-section-title">午餐（约600卡路里）</div>
+          <ul class="plan-card-list">
+            <li>烤鸡胸肉（120克）</li>
+            <li>糙米饭（半碗，约50克干重）</li>
+            <li>混合蔬菜沙拉（200克）</li>
+            <li>橄榄油调味（1茶匙）</li>
+          </ul>
+          <p><strong>餐厅选择：</strong>可选择中式餐厅的清蒸鸡胸肉/鱼，配半碗米饭和蔬菜</p>
+        </div>
+        
+        <div class="plan-card-section">
+          <div class="plan-card-section-title">晚餐（约650卡路里）</div>
+          <ul class="plan-card-list">
+            <li>清蒸鱼（150克）</li>
+            <li>炒青菜（200克）</li>
+            <li>糙米饭（半碗，约50克干重）</li>
+            <li>蘑菇汤（无奶油）</li>
+          </ul>
+        </div>
+        
+        <div class="plan-card-section">
+          <div class="plan-card-section-title">加餐（约250卡路里）</div>
+          <ul class="plan-card-list">
+            <li>低脂酸奶（200克）</li>
+            <li>混合坚果（15克，约10-12粒杏仁）</li>
+          </ul>
+        </div>
+        
+        <div class="plan-card-footer">
+          <div class="plan-card-total">总热量：约2000卡路里</div>
+          <button class="btn" onclick="printPlan()">打印</button>
+        </div>
+      </div>
+      
+      <!-- 第2天 -->
+      <div class="plan-card">
+        <div class="plan-card-header">
+          <div class="plan-card-title">第2天</div>
+          <div class="plan-card-date">适应期</div>
+        </div>
+        
+        <div class="plan-card-section">
+          <div class="plan-card-section-title">早餐（约500卡路里）</div>
+          <ul class="plan-card-list">
+            <li>全麦吐司（2片）</li>
+            <li>1个煮鸡蛋 + 2个蛋白</li>
+            <li>1/4个牛油果</li>
+            <li>1杯无糖绿茶</li>
+          </ul>
+        </div>
+        
+        <div class="plan-card-section">
+          <div class="plan-card-section-title">午餐（约600卡路里）</div>
+          <ul class="plan-card-list">
+            <li>虾仁炒蔬菜（虾100克，蔬菜200克）</li>
+            <li>糙米饭（半碗，约50克干重）</li>
+            <li>紫菜汤</li>
+          </ul>
+          <p><strong>餐厅选择：</strong>可选择日式餐厅的烤鱼套餐，要求少米饭多蔬菜</p>
+        </div>
+        
+        <div class="plan-card-section">
+          <div class="plan-card-section-title">晚餐（约650卡路里）</div>
+          <ul class="plan-card-list">
+            <li>烤鸡腿肉（去皮，150克）</li>
+            <li>烤红薯（1小个，约100克）</li>
+            <li>炒西兰花和胡萝卜（250克）</li>
+          </ul>
+        </div>
+        
+        <div class="plan-card-section">
+          <div class="plan-card-section-title">加餐（约250卡路里）</div>
+          <ul class="plan-card-list">
+            <li>蛋白质奶昔（1勺蛋白粉，250ml无糖豆浆）</li>
+            <li>1个中等大小的橙子</li>
+          </ul>
+        </div>
+        
+        <div class="plan-card-footer">
+          <div class="plan-card-total">总热量：约2000卡路里</div>
+          <button class="btn" onclick="printPlan()">打印</button>
+        </div>
+      </div>
+      
+      <!-- 第3天 -->
+      <div class="plan-card">
+        <div class="plan-card-header">
+          <div class="plan-card-title">第3天</div>
+          <div class="plan-card-date">适应期</div>
+        </div>
+        
+        <div class="plan-card-section">
+          <div class="plan-card-section-title">早餐（约500卡路里）</div>
+          <ul class="plan-card-list">
+            <li>希腊酸奶（200克）</li>
+            <li>混合浆果（100克）</li>
+            <li>燕麦片（30克）</li>
+            <li>奇亚籽（1茶匙）</li>
+          </ul>
+        </div>
+        
+        <div class="plan-card-section">
+          <div class="plan-card-section-title">午餐（约600卡路里）</div>
+          <ul class="plan-card-list">
+            <li>牛肉蔬菜汤（瘦牛肉100克，蔬菜200克）</li>
+            <li>全麦面包（1片）</li>
+            <li>混合沙拉（配少量橄榄油和醋）</li>
+          </ul>
+          <p><strong>餐厅选择：</strong>可选择西式餐厅的烤鸡沙拉，要求酱料分开上</p>
+        </div>
+        
+        <div class="plan-card-section">
+          <div class="plan-card-section-title">晚餐（约650卡路里）</div>
+          <ul class="plan-card-list">
+            <li>烤三文鱼（150克）</li>
+            <li>藜麦（50克干重）</li>
+            <li>蒸西兰花和花椰菜（250克）</li>
+            <li>柠檬汁调味</li>
+          </ul>
+        </div>
+        
+        <div class="plan-card-section">
+          <div class="plan-card-section-title">加餐（约250卡路里）</div>
+          <ul class="plan-card-list">
+            <li>水煮蛋（2个）</li>
+            <li>胡萝卜条（100克）</li>
+            <li>黄瓜条（100克）</li>
+          </ul>
+        </div>
+        
+        <div class="plan-card-footer">
+          <div class="plan-card-total">总热量：约2000卡路里</div>
+          <button class="btn" onclick="printPlan()">打印</button>
+        </div>
+      </div>
+      
+      <!-- 第4-7天 -->
+      <div class="plan-card">
+        <div class="plan-card-header">
+          <div class="plan-card-title">第4-7天</div>
+          <div class="plan-card-date">适应期</div>
+        </div>
+        
+        <div class="plan-card-section">
+          <p>第4-7天的饮食计划遵循类似的模式，但食物选择有所变化，以确保营养多样性。每天保持：</p>
+          <ul>
+            <li>总热量：2000-2100卡路里</li>
+            <li>蛋白质：170-190克</li>
+            <li>碳水化合物：140-160克</li>
+            <li>脂肪：60-70克</li>
+          </ul>
+          <p>食物选择应遵循"食物选择指南"中的建议，确保每天摄入多样化的蛋白质来源、复杂碳水化合物、健康脂肪和丰富的蔬菜。</p>
+        </div>
+        
+        <div class="plan-card-section">
+          <div class="plan-card-section-title">第4-7天食物轮换建议</div>
+          <ul>
+            <li><strong>蛋白质来源轮换：</strong>鸡胸肉、鱼类、虾、瘦牛肉、豆腐、鸡蛋</li>
+            <li><strong>碳水化合物轮换：</strong>糙米、藜麦、红薯、全麦面包、燕麦</li>
+            <li><strong>蔬菜轮换：</strong>确保每天摄入不同颜色的蔬菜</li>
+            <li><strong>水果轮换：</strong>苹果、橙子、浆果、梨、猕猴桃</li>
+          </ul>
+        </div>
+        
+        <div class="plan-card-footer">
+          <div class="plan-card-total">总热量：约2000-2100卡路里</div>
+          <button class="btn" onclick="printPlan()">打印</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 第2周 -->
+    <div id="week-2" class="week-plan" style="display: none;">
+      <h2>第2周：强化期（第8-14天）</h2>
+      <p>这一周的目标是进一步优化食物选择，热量控制在1900-2000卡路里。重点是增加膳食纤维摄入，进一步减少加工食品。</p>
+      
+      <!-- 第8天 -->
+      <div class="plan-card">
+        <div class="plan-card-header">
+          <div class="plan-card-title">第8天</div>
+          <div class="plan-card-date">强化期</div>
+        </div>
+        
+        <div class="plan-card-section">
+          <div class="plan-card-section-title">早餐（约450卡路里）</div>
+          <ul class="plan-card-list">
+            <li>蛋白质奶昔（1勺蛋白粉，250ml无糖杏仁奶）</li>
+            <li>燕麦片（30克）</li>
+            <li>蓝莓（50克）</li>
+            <li>奇亚籽（1茶匙）</li>
+          </ul>
+        </div>
+        
+        <div class="plan-card-section">
+          <div class="plan-card-section-title">午餐（约600卡路里）</div>
+          <ul class="plan-card-list">
+            <li>烤鸡胸肉沙拉（鸡胸肉120克，混合蔬菜200克）</li>
+            <li>藜麦（40克干重）</li>
+            <li>橄榄油和柠檬汁调味（1茶匙油）</li>
+          </ul>
+          <p><strong>餐厅选择：</strong>可选择沙拉专门店的蛋白质沙拉，要求酱料分开上</p>
+        </div>
+        
+        <div class="plan-card-section">
+          <div class="plan-card-section-title">晚餐（约600卡路里）</div>
+          <ul class="plan-card-list">
+            <li>清蒸鳕鱼（150克）</li>
+            <li>炒菠菜（150克）</li>
+            <li>糙米饭（40克干重）</li>
+            <li>蘑菇汤（无奶油）</li>
+          </ul>
+        </div>
+        
+        <div class="plan-card-section">
+          <div class="plan-card-section-title">加餐（约250卡路里）</div>
+          <ul class="plan-card-list">
+            <li>低脂希腊酸奶（150克）</li>
+            <li>杏仁（10克，约8-10粒）</li>
+            <li>1个小苹果</li>
+          </ul>
+        </div>
+        
+        <div class="plan-card-footer">
+          <div class="plan-card-total">总热量：约1900卡路里</div>
+          <button class="btn" onclick="printPlan()">打印</button>
+        </div>
+      </div>
+      
+      <!-- 第9-14天 -->
+      <div class="plan-card">
+        <div class="plan-card-header">
+          <div class="plan-card-title">第9-14天</div>
+          <div class="plan-card-date">强化期</div>
+        </div>
+        
+        <div class="plan-card-section">
+          <p>第9-14天的饮食计划遵循类似的模式，但食物选择有所变化，以确保营养多样性。每天保持：</p>
+          <ul>
+            <li>总热量：1900-2000卡路里</li>
+            <li>蛋白质：170-190克</li>
+            <li>碳水化合物：130-150克</li>
+            <li>脂肪：60-70克</li>
+          </ul>
+          <p>这一周应特别注意增加膳食纤维摄入，每天至少25克，并进一步减少加工食品。</p>
+        </div>
+        
+        <div class="plan-card-section">
+          <div class="plan-card-section-title">第9-14天食物轮换建议</div>
+          <ul>
+            <li><strong>蛋白质来源轮换：</strong>鸡胸肉、各种鱼类、虾、瘦牛肉、豆腐、鸡蛋</li>
+            <li><strong>碳水化合物轮换：</strong>糙米、藜麦、红薯、全麦面包、燕麦</li>
+            <li><strong>蔬菜轮换：</strong>每天至少5份不同蔬菜</li>
+            <li><strong>水果轮换：</strong>低糖水果为主，如浆果、苹果、梨</li>
+          </ul>
+        </div>
+        
+        <div class="plan-card-footer">
+          <div class="plan-card-total">总热量：约1900-2000卡路里</div>
+          <button class="btn" onclick="printPlan()">打印</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 第3周 -->
+    <div id="week-3" class="week-plan" style="display: none;">
+      <h2>第3周：稳定期（第15-21天）</h2>
+      <p>这一周的目标是巩固健康饮食习惯，热量维持在1900卡路里左右。重点是优化营养密度，确保微量营养素摄入充足。</p>
+      
+      <!-- 第15天 -->
+      <div class="plan-card">
+        <div class="plan-card-header">
+          <div class="plan-card-title">第15天</div>
+          <div class="plan-card-date">稳定期</div>
+        </div>
+        
+        <div class="plan-card-section">
+          <div class="plan-card-section-title">早餐（约450卡路里）</div>
+          <ul class="plan-card-list">
+            <li>蔬菜蛋白质煎蛋（2个蛋白，1个全蛋，菠菜50克，蘑菇50克）</li>
+            <li>全麦吐司（1片）</li>
+            <li>1/4个牛油果</li>
+            <li>1杯绿茶</li>
+          </ul>
+        </div>
+        
+        <div class="plan-card-section">
+          <div class="plan-card-section-title">午餐（约600卡路里）</div>
+          <ul class="plan-card-list">
+            <li>三文鱼沙拉（三文鱼120克，混合蔬菜200克）</li>
+            <li>藜麦（40克干重）</li>
+            <li>橄榄油和柠檬汁调味（1茶匙油）</li>
+          </ul>
+          <p><strong>餐厅选择：</strong>可选择日式餐厅的三文鱼刺身，配少量糙米和蔬菜</p>
+        </div>
+        
+        <div class="plan-card-section">
+          <div class="plan-card-section-title">晚餐（约600卡路里）</div>
+          <ul class="plan-card-list">
+            <li>烤鸡胸肉（150克）</li>
+            <li>烤蔬菜（西兰花、胡萝卜、彩椒，共250克）</li>
+            <li>红薯（100克）</li>
+            <li>香草调味</li>
+          </ul>
+        </div>
+        
+        <div class="plan-card-section">
+          <div class="plan-card-section-title">加餐（约250卡路里）</div>
+          <ul class="plan-card-list">
+            <li>低脂希腊酸奶（150克）</li>
+            <li>混合坚果（10克）</li>
+            <li>蓝莓（50克）</li>
+          </ul>
+        </div>
+        
+        <div class="plan-card-footer">
+          <div class="plan-card-total">总热量：约1900卡路里</div>
+          <button class="btn" onclick="printPlan()">打印</button>
+        </div>
+      </div>
+      
+      <!-- 第16-21天 -->
+      <div class="plan-card">
+        <div class="plan-card-header">
+          <div class="plan-card-title">第16-21天</div>
+          <div class="plan-card-date">稳定期</div>
+        </div>
+        
+        <div class="plan-card-section">
+          <p>第16-21天的饮食计划遵循类似的模式，但食物选择有所变化，以确保营养多样性。每天保持：</p>
+          <ul>
+            <li>总热量：约1900卡路里</li>
+            <li>蛋白质：170-190克</li>
+            <li>碳水化合物：130-150克</li>
+            <li>脂肪：60-70克</li>
+          </ul>
+          <p>这一周应特别注意优化营养密度，确保微量营养素摄入充足，如维生素、矿物质和抗氧化物。</p>
+        </div>
+        
+        <div class="plan-card-section">
+          <div class="plan-card-section-title">第16-21天食物轮换建议</div>
+          <ul>
+            <li><strong>蛋白质来源轮换：</strong>鸡胸肉、各种鱼类、虾、瘦牛肉、豆腐、鸡蛋</li>
+            <li><strong>碳水化合物轮换：</strong>糙米、藜麦、红薯、全麦面包、燕麦</li>
+            <li><strong>蔬菜轮换：</strong>每天至少5份不同蔬菜，包括深绿色叶菜</li>
+            <li><strong>水果轮换：</strong>低糖水果为主，如浆果、苹果、梨</li>
+            <li><strong>健康脂肪轮换：</strong>橄榄油、亚麻籽油、牛油果、坚果</li>
+          </ul>
+        </div>
+        
+        <div class="plan-card-footer">
+          <div class="plan-card-total">总热量：约1900卡路里</div>
+          <button class="btn" onclick="printPlan()">打印</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 第4周 -->
+    <div id="week-4" class="week-plan" style="display: none;">
+      <h2>第4周：巩固期（第22-30天）</h2>
+      <p>这一周的目标是巩固前三周建立的健康饮食习惯，热量维持在1900卡路里左右。重点是培养长期可持续的饮食模式。</p>
+      
+      <!-- 第22天 -->
+      <div class="plan-card">
+        <div class="plan-card-header">
+          <div class="plan-card-title">第22天</div>
+          <div class="plan-card-date">巩固期</div>
+        </div>
+        
+        <div class="plan-card-section">
+          <div class="plan-card-section-title">早餐（约450卡路里）</div>
+          <ul class="plan-card-list">
+            <li>蛋白质奶昔（1勺蛋白粉，250ml无糖杏仁奶）</li>
+            <li>燕麦片（30克）</li>
+            <li>混合浆果（50克）</li>
+            <li>奇亚籽（1茶匙）</li>
+          </ul>
+        </div>
+        
+        <div class="plan-card-section">
+          <div class="plan-card-section-title">午餐（约600卡路里）</div>
+          <ul class="plan-card-list">
+            <li>地中海风味沙拉（鸡胸肉120克，混合蔬菜200克，橄榄10克，番茄50克）</li>
+            <li>藜麦（40克干重）</li>
+            <li>橄榄油和柠檬汁调味（1茶匙油）</li>
+          </ul>
+          <p><strong>餐厅选择：</strong>可选择地中海风格餐厅的烤鱼配蔬菜</p>
+        </div>
+        
+        <div class="plan-card-section">
+          <div class="plan-card-section-title">晚餐（约600卡路里）</div>
+          <ul class="plan-card-list">
+            <li>烤三文鱼（150克）</li>
+            <li>烤蔬菜（西兰花、胡萝卜、彩椒，共250克）</li>
+            <li>糙米饭（40克干重）</li>
+            <li>香草调味</li>
+          </ul>
+        </div>
+        
+        <div class="plan-card-section">
+          <div class="plan-card-section-title">加餐（约250卡路里）</div>
+          <ul class="plan-card-list">
+            <li>低脂希腊酸奶（150克）</li>
+            <li>混合坚果（10克）</li>
+            <li>1个小苹果</li>
+          </ul>
+        </div>
+        
+        <div class="plan-card-footer">
+          <div class="plan-card-total">总热量：约1900卡路里</div>
+          <button class="btn" onclick="printPlan()">打印</button>
+        </div>
+      </div>
+      
+      <!-- 第23-30天 -->
+      <div class="plan-card">
+        <div class="plan-card-header">
+          <div class="plan-card-title">第23-30天</div>
+          <div class="plan-card-date">巩固期</div>
+        </div>
+        
+        <div class="plan-card-section">
+          <p>第23-30天的饮食计划遵循类似的模式，但食物选择有所变化，以确保营养多样性。每天保持：</p>
+          <ul>
+            <li>总热量：约1900卡路里</li>
+            <li>蛋白质：170-190克</li>
+            <li>碳水化合物：130-150克</li>
+            <li>脂肪：60-70克</li>
+          </ul>
+          <p>这一周应特别注意培养长期可持续的饮食习惯，为30天计划结束后的维持期做准备。</p>
+        </div>
+        
+        <div class="plan-card-section">
+          <div class="plan-card-section-title">第23-30天食物轮换建议</div>
+          <ul>
+            <li><strong>蛋白质来源轮换：</strong>鸡胸肉、各种鱼类、虾、瘦牛肉、豆腐、鸡蛋</li>
+            <li><strong>碳水化合物轮换：</strong>糙米、藜麦、红薯、全麦面包、燕麦</li>
+            <li><strong>蔬菜轮换：</strong>每天至少5份不同蔬菜，包括深绿色叶菜</li>
+            <li><strong>水果轮换：</strong>低糖水果为主，如浆果、苹果、梨</li>
+            <li><strong>健康脂肪轮换：</strong>橄榄油、亚麻籽油、牛油果、坚果</li>
+          </ul>
+        </div>
+        
+        <div class="plan-card-section">
+          <div class="plan-card-section-title">30天后的过渡建议</div>
+          <p>30天计划结束后，如果你还没有达到目标体重，可以继续遵循这个计划。如果已经达到目标，可以逐渐增加每日热量摄入（每周增加100-200卡路里），直到找到维持体重的热量水平。</p>
+        </div>
+        
+        <div class="plan-card-footer">
+          <div class="plan-card-total">总热量：约1900卡路里</div>
+          <button class="btn" onclick="printPlan()">打印</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 返回按钮 -->
+    <div style="text-align: center; margin: 2rem 0;">
+      <a href="diet.html" class="btn btn-lg">返回饮食计划概览</a>
+    </div>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>© 2025 30天减肥计划 | 所有内容仅供参考，请在医生指导下进行减肥</div>
+      <ul class="footer-links">
+        <li><a href="about.html">关于</a></li>
+        <li><a href="faq.html">常见问题</a></li>
+        <li><a href="#" class="back-to-top">↑</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>进度跟踪 - 30天减肥计划</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <a href="index.html" class="navbar-logo">30天减肥计划</a>
+      <button class="navbar-toggle">☰</button>
+      <ul class="navbar-menu">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="science.html">减肥科学</a></li>
+        <li><a href="diet.html">饮食计划</a></li>
+        <li><a href="exercise.html">运动计划</a></li>
+        <li><a href="progress.html" class="active">进度跟踪</a></li>
+        <li><a href="faq.html">常见问题</a></li>
+        <li><a href="about.html">关于</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 横幅 -->
+  <div class="banner">
+    <div class="container">
+      <h1>进度跟踪</h1>
+      <p>记录你的减肥进度，查看体重变化趋势，庆祝每一个小成就</p>
+    </div>
+  </div>
+
+  <!-- 主要内容 -->
+  <main class="container">
+    <!-- 进度概览 -->
+    <div class="card">
+      <h2>进度概览</h2>
+      <div class="user-stats">
+        <div class="stat">
+          <div class="stat-value">85kg</div>
+          <div class="stat-label">起始体重</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">75kg</div>
+          <div class="stat-label">目标体重</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value" id="current-weight">--</div>
+          <div class="stat-label">当前体重</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value" id="weight-lost">--</div>
+          <div class="stat-label">已减重</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value" id="progress-percentage">--</div>
+          <div class="stat-label">完成百分比</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 体重图表 -->
+    <div class="progress-section">
+      <h2>体重变化趋势</h2>
+      <div class="progress-chart">
+        <canvas id="weight-chart"></canvas>
+      </div>
+    </div>
+
+    <!-- 腰围图表 -->
+    <div class="progress-section">
+      <h2>腰围变化趋势</h2>
+      <div class="progress-chart">
+        <canvas id="waist-chart"></canvas>
+      </div>
+    </div>
+
+    <!-- 记录表单 -->
+    <div class="progress-section">
+      <h2>记录今日数据</h2>
+      <div class="progress-form">
+        <form id="progress-form">
+          <div class="form-group">
+            <label for="progress-date">日期</label>
+            <input type="date" id="progress-date" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="progress-weight">体重 (kg)</label>
+            <input type="number" id="progress-weight" class="form-control" step="0.1" min="40" max="200" required>
+          </div>
+          <div class="form-group">
+            <label for="progress-waist">腰围 (cm) (可选)</label>
+            <input type="number" id="progress-waist" class="form-control" step="0.1" min="50" max="150">
+          </div>
+          <div class="form-group">
+            <label for="progress-notes">备注 (可选)</label>
+            <textarea id="progress-notes" class="form-control" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn">保存记录</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- 进度提示 -->
+    <div class="card">
+      <h2>进度跟踪提示</h2>
+      <div class="plan-card-section">
+        <h3>记录频率</h3>
+        <p>建议每周记录2-3次体重，选择固定的时间（如早晨起床后、排空膀胱后、进食前）进行测量，以获得最一致的结果。</p>
+      </div>
+      <div class="plan-card-section">
+        <h3>体重波动</h3>
+        <p>体重每天都会有自然波动，受水分摄入、食物消化、荷尔蒙变化等因素影响。关注长期趋势而非短期波动。</p>
+      </div>
+      <div class="plan-card-section">
+        <h3>多维度评估</h3>
+        <p>除了体重外，还可以记录腰围、体脂率（如有条件）、衣服合身度、精力水平等多种指标，全面评估进步。</p>
+      </div>
+      <div class="plan-card-section">
+        <h3>调整计划</h3>
+        <p>如果连续两周没有看到进展，可能需要调整饮食或运动计划。参考饮食计划和运动计划中的调整机制部分。</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>© 2025 30天减肥计划 | 所有内容仅供参考，请在医生指导下进行减肥</div>
+      <ul class="footer-links">
+        <li><a href="about.html">关于</a></li>
+        <li><a href="faq.html">常见问题</a></li>
+        <li><a href="#" class="back-to-top">↑</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    // 设置当前日期为默认值
+    document.addEventListener('DOMContentLoaded', function() {
+      const today = new Date();
+      const dateInput = document.getElementById('progress-date');
+      if (dateInput) {
+        dateInput.valueAsDate = today;
+      }
+      
+      // 初始化进度数据
+      updateProgressStats();
+      
+      // 初始化图表
+      initProgressCharts();
+    });
+    
+    // 更新进度统计
+    function updateProgressStats() {
+      const progressData = JSON.parse(localStorage.getItem('progressData')) || [];
+      
+      if (progressData.length > 0) {
+        // 获取最新记录
+        const latestRecord = progressData[progressData.length - 1];
+        
+        // 更新当前体重
+        const currentWeightElement = document.getElementById('current-weight');
+        if (currentWeightElement) {
+          currentWeightElement.textContent = latestRecord.weight + 'kg';
+        }
+        
+        // 计算已减重
+        const weightLostElement = document.getElementById('weight-lost');
+        if (weightLostElement) {
+          const weightLost = 85 - latestRecord.weight;
+          weightLostElement.textContent = weightLost.toFixed(1) + 'kg';
+        }
+        
+        // 计算完成百分比
+        const progressPercentageElement = document.getElementById('progress-percentage');
+        if (progressPercentageElement) {
+          const progressPercentage = ((85 - latestRecord.weight) / 10) * 100;
+          progressPercentageElement.textContent = Math.min(100, Math.max(0, progressPercentage)).toFixed(0) + '%';
+        }
+      }
+    }
+  </script>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

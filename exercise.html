@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>运动计划 - 30天减肥计划</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <a href="index.html" class="navbar-logo">30天减肥计划</a>
+      <button class="navbar-toggle">☰</button>
+      <ul class="navbar-menu">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="science.html">减肥科学</a></li>
+        <li><a href="diet.html">饮食计划</a></li>
+        <li><a href="exercise.html" class="active">运动计划</a></li>
+        <li><a href="progress.html">进度跟踪</a></li>
+        <li><a href="faq.html">常见问题</a></li>
+        <li><a href="about.html">关于</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 横幅 -->
+  <div class="banner">
+    <div class="container">
+      <h1>30天运动计划</h1>
+      <p>渐进式的运动方案，结合有氧和力量训练，适合在晚上在家进行</p>
+    </div>
+  </div>
+
+  <!-- 主要内容 -->
+  <main class="container">
+    <div class="row">
+      <!-- 侧边导航 -->
+      <div class="col" style="flex: 0 0 25%;">
+        <div class="card">
+          <ul class="tabs" style="flex-direction: column; border-bottom: none;">
+            <li><a href="#overview" class="active">运动计划概述</a></li>
+            <li><a href="#principles">基本原则</a></li>
+            <li><a href="#exercise-types">运动类型说明</a></li>
+            <li><a href="#warmup-stretch">热身与拉伸指南</a></li>
+            <li><a href="#notes">注意事项</a></li>
+          </ul>
+        </div>
+        
+        <div class="card" style="margin-top: 1.5rem;">
+          <div class="card-title">查看详细计划</div>
+          <div class="card-content">
+            <p>查看每日详细运动计划，包括每个动作的详细说明和组数。</p>
+          </div>
+          <div class="card-footer">
+            <a href="exercise-plan.html" class="btn">详细计划</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 主要内容区域 -->
+      <div class="col" style="flex: 0 0 75%;">
+        <!-- 运动计划概述 -->
+        <div id="overview" class="tab-content">
+          <div class="card">
+            <h2>运动计划概述</h2>
+            
+            <h3>基本原则</h3>
+            <p>根据你的情况（26岁男性，身高175cm，体重85kg，目标减重10kg）和限制（只能在晚上运动），我们设计了以下30天渐进式运动计划：</p>
+            
+            <ol>
+              <li><strong>运动频率</strong>：每周5-6天，每天45-60分钟</li>
+              <li><strong>运动类型</strong>：结合有氧运动和力量训练</li>
+              <li><strong>运动强度</strong>：渐进式增加，从低强度开始，逐渐提高到中高强度</li>
+              <li><strong>考虑用户限制</strong>：所有运动安排在晚上进行，不需要特殊器材或场地</li>
+            </ol>
+            
+            <h3>计划结构</h3>
+            <p>本运动计划分为四个阶段，每个阶段的目标和强度各不相同：</p>
+            
+            <ol>
+              <li><strong>第一阶段（第1-7天）：适应期</strong>
+                <ul>
+                  <li>目标：建立运动习惯，提高基础体能</li>
+                  <li>强度：低到中等</li>
+                  <li>重点：基础有氧运动，简单力量训练</li>
+                </ul>
+              </li>
+              <li><strong>第二阶段（第8-14天）：发展期</strong>
+                <ul>
+                  <li>目标：提高心肺功能，增加基础力量</li>
+                  <li>强度：中等</li>
+                  <li>重点：延长有氧时间，增加力量训练难度</li>
+                </ul>
+              </li>
+              <li><strong>第三阶段（第15-21天）：强化期</strong>
+                <ul>
+                  <li>目标：提高代谢率，增强肌肉耐力</li>
+                  <li>强度：中等到高</li>
+                  <li>重点：高强度间歇训练，复合力量训练</li>
+                </ul>
+              </li>
+              <li><strong>第四阶段（第22-30天）：巩固期</strong>
+                <ul>
+                  <li>目标：巩固训练成果，建立长期运动习惯</li>
+                  <li>强度：中高等，包含挑战性训练</li>
+                  <li>重点：混合训练模式，增加训练多样性</li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+        </div>
+        
+        <!-- 基本原则 -->
+        <div id="principles" class="tab-content" style="display: none;">
+          <div class="card">
+            <h2>基本原则</h2>
+            
+            <div class="plan-card-section">
+              <h3>渐进原则</h3>
+              <p>运动计划遵循渐进原则，从低强度开始，逐渐增加强度和复杂性。这样可以：</p>
+              <ul>
+                <li>降低受伤风险</li>
+                <li>让身体有时间适应</li>
+                <li>建立长期可持续的运动习惯</li>
+                <li>避免过度训练和倦怠</li>
+              </ul>
+            </div>
+            
+            <div class="plan-card-section">
+              <h3>平衡原则</h3>
+              <p>计划平衡了不同类型的训练：</p>
+              <ul>
+                <li>有氧训练：提高心肺功能，燃烧脂肪</li>
+                <li>力量训练：增加肌肉量，提高基础代谢率</li>
+                <li>灵活性训练：改善关节活动范围，减少受伤风险</li>
+              </ul>
+            </div>
+            
+            <div class="plan-card-section">
+              <h3>特异性原则</h3>
+              <p>训练针对减肥目标设计：</p>
+              <ul>
+                <li>选择高效燃脂的运动方式</li>
+                <li>重点训练大肌群，最大化热量消耗</li>
+                <li>结合HIIT训练，提高代谢率</li>
+              </ul>
+            </div>
+            
+            <div class="plan-card-section">
+              <h3>恢复原则</h3>
+              <p>计划中包含适当的休息和恢复：</p>
+              <ul>
+                <li>每周安排1-2天完全休息日</li>
+                <li>不同肌群交替训练，避免过度疲劳</li>
+                <li>强调充分的热身和拉伸</li>
+              </ul>
+            </div>
+            
+            <div class="plan-card-section">
+              <h3>个性化原则</h3>
+              <p>计划考虑了你的个人情况：</p>
+              <ul>
+                <li>只能在晚上运动的时间限制</li>
+                <li>不需要特殊器材，适合在家进行</li>
+                <li>提供动作的不同难度变式，可根据个人能力调整</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 运动类型说明 -->
+        <div id="exercise-types" class="tab-content" style="display: none;">
+          <div class="card">
+            <h2>运动类型说明</h2>
+            
+            <div class="plan-card-section">
+              <h3>有氧运动</h3>
+              
+              <h4>快走/慢跑</h4>
+              <ul>
+                <li>适合初学者的基础有氧运动</li>
+                <li>可在室内外进行，不需特殊设备</li>
+                <li>强度可通过速度和时间调整</li>
+                <li>建议心率保持在最大心率的60-70%</li>
+              </ul>
+              
+              <h4>高强度间歇训练(HIIT)</h4>
+              <ul>
+                <li>短时间高强度运动与低强度恢复交替</li>
+                <li>高效燃脂，节省时间</li>
+                <li>可根据个人体能调整强度</li>
+                <li>例如：30秒冲刺+30秒休息，重复8-10次</li>
+              </ul>
+              
+              <h4>跳绳</h4>
+              <ul>
+                <li>高效的全身有氧运动</li>
+                <li>只需一根跳绳，可在家中进行</li>
+                <li>可通过速度和技巧变化调整难度</li>
+                <li>初学者可以从每组30秒开始，逐渐增加时间</li>
+              </ul>
+              
+              <h4>原地登山跑</h4>
+              <ul>
+                <li>不需设备的高强度有氧运动</li>
+                <li>同时锻炼核心和下肢</li>
+                <li>可通过速度和时间调整强度</li>
+                <li>保持核心稳定，避免腰部过度弯曲</li>
+              </ul>
+            </div>
+            
+            <div class="plan-card-section">
+              <h3>力量训练</h3>
+              
+              <h4>徒手训练</h4>
+              <ul>
+                <li>利用自身体重进行的力量训练</li>
+                <li>包括俯卧撑、深蹲、箭步蹲、平板支撑等</li>
+                <li>适合各级别健身者，可调整难度</li>
+                <li>重点关注正确姿势，避免受伤</li>
+              </ul>
+              
+              <h4>哑铃训练（如有条件）</h4>
+              <ul>
+                <li>使用简单哑铃进行的力量训练</li>
+                <li>可锻炼特定肌群，增加训练多样性</li>
+                <li>重量可根据个人能力调整</li>
+                <li>初学者可从轻重量开始，注重动作质量</li>
+              </ul>
+              
+              <h4>弹力带训练（如有条件）</h4>
+              <ul>
+                <li>使用弹力带进行的阻力训练</li>
+                <li>便携、多功能，适合家庭使用</li>
+                <li>通过选择不同阻力的弹力带调整难度</li>
+                <li>可用于增强上肢、下肢和核心肌群</li>
+              </ul>
+            </div>
+            
+            <div class="plan-card-section">
+              <h3>复合训练</h3>
+              <p>复合训练结合了有氧和力量元素，最大化训练效果：</p>
+              <ul>
+                <li>循环训练：连续完成一系列不同的运动，中间很少或没有休息</li>
+                <li>Tabata训练：20秒高强度运动+10秒休息，重复8次</li>
+                <li>复合动作：同时训练多个肌群的动作，如深蹲跳、波比跳等</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 热身与拉伸指南 -->
+        <div id="warmup-stretch" class="tab-content" style="display: none;">
+          <div class="card">
+            <h2>热身与拉伸指南</h2>
+            <p>每次训练前后都应进行适当的热身和拉伸，这对于预防受伤和促进恢复至关重要。</p>
+            
+            <div class="plan-card-section">
+              <h3>热身（5-10分钟）</h3>
+              <p>热身的目的是逐渐提高体温，增加肌肉血流，为即将到来的运动做准备。</p>
+              
+              <h4>动态热身动作</h4>
+              <ul>
+                <li><strong>原地踏步</strong>：1-2分钟，逐渐提高膝盖高度</li>
+                <li><strong>手臂绕环</strong>：前后各10-15次，逐渐增大幅度</li>
+                <li><strong>髋关节环绕</strong>：每侧10次，放松髋部</li>
+                <li><strong>轻度深蹲</strong>：10-15次，唤醒下肢肌群</li>
+                <li><strong>轻度跳跃</strong>：30秒，提高心率</li>
+              </ul>
+              
+              <p>热身应该让你感到温暖，略微出汗，但不应该感到疲劳。</p>
+            </div>
+            
+            <div class="plan-card-section">
+              <h3>拉伸（5-10分钟）</h3>
+              <p>训练后的拉伸有助于恢复肌肉长度，减少酸痛，提高灵活性。</p>
+              
+              <h4>静态拉伸动作</h4>
+              <ul>
+                <li><strong>胸部和肩部拉伸</strong>：双臂向后伸展，感受胸部拉伸，保持30秒</li>
+                <li><strong>大腿前侧拉伸</strong>：站立，一只手抓住同侧脚踝向臀部方向拉，每侧保持30秒</li>
+                <li><strong>大腿后侧拉伸</strong>：坐姿，一条腿伸直，上身向前倾，每侧保持30秒</li>
+                <li><strong>小腿拉伸</strong>：站立，一条腿向后伸，脚跟着地，每侧保持30秒</li>
+                <li><strong>背部拉伸</strong>：跪姿，上身前倾，手臂前伸，感受背部拉伸，保持30秒</li>
+                <li><strong>手臂拉伸</strong>：一只手臂横过胸前，另一只手臂辅助拉伸，每侧保持30秒</li>
+              </ul>
+              
+              <p>拉伸时应该感到轻微的拉力，但不应该疼痛。保持深呼吸，不要屏住呼吸。</p>
+            </div>
+            
+            <div class="plan-card-section">
+              <h3>拉伸时机</h3>
+              <ul>
+                <li><strong>训练前</strong>：以动态热身为主，避免长时间静态拉伸</li>
+                <li><strong>训练后</strong>：进行全面的静态拉伸，每个动作保持30秒</li>
+                <li><strong>休息日</strong>：可以进行更长时间的拉伸练习，改善整体灵活性</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 注意事项 -->
+        <div id="notes" class="tab-content" style="display: none;">
+          <div class="card">
+            <h2>注意事项</h2>
+            
+            <div class="plan-card-section">
+              <h3>循序渐进</h3>
+              <ul>
+                <li>根据个人体能状况调整运动强度</li>
+                <li>如感到不适，应立即停止并休息</li>
+                <li>不要急于增加强度，给身体足够的适应时间</li>
+                <li>如果某些动作太难，可以选择简化版本</li>
+              </ul>
+            </div>
+            
+            <div class="plan-card-section">
+              <h3>充分休息</h3>
+              <ul>
+                <li>保证每周至少1-2天完全休息日</li>
+                <li>确保充足的睡眠，促进恢复</li>
+                <li>注意肌肉酸痛与疼痛的区别</li>
+                <li>轻度肌肉酸痛是正常的，但持续疼痛需要休息</li>
+              </ul>
+            </div>
+            
+            <div class="plan-card-section">
+              <h3>水分补充</h3>
+              <ul>
+                <li>运动前、中、后都要补充足够水分</li>
+                <li>避免脱水和过度疲劳</li>
+                <li>运动时每15-20分钟喝一小口水</li>
+                <li>运动后根据出汗量补充水分</li>
+              </ul>
+            </div>
+            
+            <div class="plan-card-section">
+              <h3>饮食配合</h3>
+              <ul>
+                <li>运动前1-2小时可适量进食，提供能量</li>
+                <li>运动后30分钟内补充适量蛋白质，促进恢复</li>
+                <li>避免空腹进行高强度训练</li>
+                <li>运动计划应与饮食计划相配合，以达到最佳减肥效果</li>
+              </ul>
+            </div>
+            
+            <div class="plan-card-section">
+              <h3>安全第一</h3>
+              <ul>
+                <li>保持正确姿势，避免受伤</li>
+                <li>如有慢性疾病，应先咨询医生</li>
+                <li>准备适当的运动空间，移除潜在危险物品</li>
+                <li>穿着合适的运动鞋和舒适的运动服装</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 查看详细计划按钮 -->
+    <div style="text-align: center; margin: 2rem 0;">
+      <a href="exercise-plan.html" class="btn btn-lg">查看详细30天运动计划</a>
+    </div>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>© 2025 30天减肥计划 | 所有内容仅供参考，请在医生指导下进行减肥</div>
+      <ul class="footer-links">
+        <li><a href="about.html">关于</a></li>
+        <li><a href="faq.html">常见问题</a></li>
+        <li><a href="#" class="back-to-top">↑</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

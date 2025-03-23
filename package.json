@@ -1,0 +1,26 @@
+{
+  "name": "30-day-weight-loss-plan",
+  "version": "1.0.0",
+  "description": "A 30-day weight loss plan website with diet and exercise guidance",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "weight-loss",
+    "diet-plan",
+    "exercise-plan",
+    "health",
+    "fitness"
+  ],
+  "author": "",
+  "license": "MIT",
+  "homepage": "https://github.com/username/30-day-weight-loss-plan#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/username/30-day-weight-loss-plan.git"
+  },
+  "bugs": {
+    "url": "https://github.com/username/30-day-weight-loss-plan/issues"
+  }
+}

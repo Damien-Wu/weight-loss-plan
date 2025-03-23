@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>饮食计划 - 30天减肥计划</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <a href="index.html" class="navbar-logo">30天减肥计划</a>
+      <button class="navbar-toggle">☰</button>
+      <ul class="navbar-menu">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="science.html">减肥科学</a></li>
+        <li><a href="diet.html" class="active">饮食计划</a></li>
+        <li><a href="exercise.html">运动计划</a></li>
+        <li><a href="progress.html">进度跟踪</a></li>
+        <li><a href="faq.html">常见问题</a></li>
+        <li><a href="about.html">关于</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 横幅 -->
+  <div class="banner">
+    <div class="container">
+      <h1>30天饮食计划</h1>
+      <p>科学配比的饮食方案，控制每日卡路里摄入，同时保证营养均衡</p>
+    </div>
+  </div>
+
+  <!-- 主要内容 -->
+  <main class="container">
+    <div class="row">
+      <!-- 侧边导航 -->
+      <div class="col" style="flex: 0 0 25%;">
+        <div class="card">
+          <ul class="tabs" style="flex-direction: column; border-bottom: none;">
+            <li><a href="#overview" class="active">饮食计划概述</a></li>
+            <li><a href="#nutrition-goals">每日营养目标</a></li>
+            <li><a href="#food-guide">食物选择指南</a></li>
+            <li><a href="#restaurant-guide">餐厅就餐指南</a></li>
+            <li><a href="#home-guide">家庭饮食指南</a></li>
+            <li><a href="#habits">饮食习惯建议</a></li>
+            <li><a href="#adjustment">调整机制</a></li>
+          </ul>
+        </div>
+        
+        <div class="card" style="margin-top: 1.5rem;">
+          <div class="card-title">查看详细计划</div>
+          <div class="card-content">
+            <p>查看每日详细饮食计划，包括每餐食物选择和卡路里计算。</p>
+          </div>
+          <div class="card-footer">
+            <a href="diet-plan.html" class="btn">详细计划</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 主要内容区域 -->
+      <div class="col" style="flex: 0 0 75%;">
+        <!-- 饮食计划概述 -->
+        <div id="overview" class="tab-content">
+          <div class="card">
+            <h2>饮食计划概述</h2>
+            
+            <h3>基本原则</h3>
+            <p>根据你的情况（26岁男性，身高175cm，体重85kg，目标减重10kg），我们设计了以下30天饮食计划：</p>
+            
+            <ol>
+              <li><strong>每日热量摄入目标</strong>：1900-2100卡路里，创造500-700卡路里的热量赤字</li>
+              <li><strong>宏量营养素比例</strong>：蛋白质40%，碳水化合物30%，脂肪30%</li>
+              <li><strong>餐次安排</strong>：每天3餐+1-2次小食，保持血糖稳定</li>
+              <li><strong>考虑用户限制</strong>：中午只能在公司附近餐厅就餐，晚上可以在家自己制作食物</li>
+            </ol>
+            
+            <h3>计划结构</h3>
+            <p>这个饮食计划设计为渐进式，分为三个阶段：</p>
+            
+            <ol>
+              <li><strong>适应期（第1-10天）</strong>：
+                <ul>
+                  <li>逐步调整饮食习惯</li>
+                  <li>热量适度控制在2000-2100卡路里</li>
+                </ul>
+              </li>
+              <li><strong>强化期（第11-20天）</strong>：
+                <ul>
+                  <li>进一步优化食物选择</li>
+                  <li>热量控制在1900-2000卡路里</li>
+                </ul>
+              </li>
+              <li><strong>稳定期（第21-30天）</strong>：
+                <ul>
+                  <li>巩固健康饮食习惯</li>
+                  <li>热量维持在1900卡路里左右</li>
+                </ul>
+              </li>
+            </ol>
+            
+            <p>如果在执行过程中出现不适，应适当调整计划，确保健康和可持续性。</p>
+          </div>
+        </div>
+        
+        <!-- 每日营养目标 -->
+        <div id="nutrition-goals" class="tab-content" style="display: none;">
+          <div class="card">
+            <h2>每日营养目标</h2>
+            
+            <div class="plan-card-section">
+              <h3>宏量营养素目标</h3>
+              <ul>
+                <li><strong>蛋白质</strong>：约170-190克（每公斤体重2克）</li>
+                <li><strong>碳水化合物</strong>：约140-160克</li>
+                <li><strong>脂肪</strong>：约60-70克</li>
+              </ul>
+            </div>
+            
+            <div class="plan-card-section">
+              <h3>微量营养素目标</h3>
+              <ul>
+                <li><strong>膳食纤维</strong>：至少25克</li>
+                <li><strong>钙</strong>：1000-1200毫克</li>
+                <li><strong>铁</strong>：8-10毫克</li>
+                <li><strong>维生素C</strong>：90毫克</li>
+                <li><strong>维生素D</strong>：15-20微克</li>
+              </ul>
+            </div>
+            
+            <div class="plan-card-section">
+              <h3>水分摄入</h3>
+              <ul>
+                <li><strong>水</strong>：至少2.5-3升水</li>
+                <li>可以包括无糖茶、咖啡（限量）</li>
+                <li>避免含糖饮料、酒精</li>
+              </ul>
+            </div>
+            
+            <div class="plan-card-section">
+              <h3>餐次分配</h3>
+              <ul>
+                <li><strong>早餐</strong>：约500卡路里（25%）</li>
+                <li><strong>午餐</strong>：约600卡路里（30%）</li>
+                <li><strong>晚餐</strong>：约650卡路里（30%）</li>
+                <li><strong>加餐</strong>：约150-250卡路里（15%）</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 食物选择指南 -->
+        <div id="food-guide" class="tab-content" style="display: none;">
+          <div class="card">
+            <h2>食物选择指南</h2>
+            
+            <div class="plan-card-section">
+              <h3>优先选择的食物</h3>
+              
+              <h4>蛋白质来源</h4>
+              <ul>
+                <li>鸡胸肉、鸡腿肉（去皮）</li>
+                <li>瘦牛肉、瘦猪肉</li>
+                <li>鱼类（三文鱼、金枪鱼、鳕鱼等）</li>
+                <li>豆腐、豆干、豆浆</li>
+                <li>鸡蛋（优先蛋白）</li>
+                <li>低脂奶制品（酸奶、奶酪）</li>
+              </ul>
+              
+              <h4>碳水化合物来源</h4>
+              <ul>
+                <li>全谷物（糙米、燕麦、全麦面包）</li>
+                <li>薯类（红薯、土豆）</li>
+                <li>豆类（黑豆、鹰嘴豆）</li>
+                <li>水果（苹果、梨、浆果类）</li>
+              </ul>
+              
+              <h4>脂肪来源</h4>
+              <ul>
+                <li>坚果（杏仁、核桃）适量</li>
+                <li>橄榄油、亚麻籽油</li>
+                <li>牛油果</li>
+                <li>深海鱼类中的健康脂肪</li>
+              </ul>
+              
+              <h4>蔬菜</h4>
+              <ul>
+                <li>绿叶蔬菜（菠菜、生菜、芥蓝）</li>
+                <li>十字花科蔬菜（西兰花、花椰菜）</li>
+                <li>各色蔬菜（胡萝卜、番茄、黄瓜、彩椒）</li>
+              </ul>
+            </div>
+            
+            <div class="plan-card-section">
+              <h3>限制食物</h3>
+              <ul>
+                <li>精制碳水化合物（白米、白面、甜点）</li>
+                <li>油炸食品</li>
+                <li>高糖食品和饮料</li>
+                <li>酒精</li>
+                <li>高盐加工食品</li>
+              </ul>
+            </div>
+            
+            <div class="plan-card-section">
+              <h3>食物替代选择</h3>
+              <p>如果你不喜欢或无法获得某些推荐食物，以下是一些替代选择：</p>
+              <ul>
+                <li>不喜欢鱼类 → 可用鸡胸肉+鱼油补充剂替代</li>
+                <li>乳糖不耐受 → 可用豆浆、杏仁奶替代牛奶</li>
+                <li>不喜欢某种蔬菜 → 可用其他同类蔬菜替代（如不喜欢西兰花可用花椰菜替代）</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 餐厅就餐指南 -->
+        <div id="restaurant-guide" class="tab-content" style="display: none;">
+          <div class="card">
+            <h2>餐厅就餐指南</h2>
+            <p>由于你中午需要在公司附近餐厅就餐，提供以下指导：</p>
+            
+            <div class="plan-card-section">
+              <h3>选择方式</h3>
+              <ul>
+                <li>优先选择蒸、煮、炖、烤的烹饪方式</li>
+                <li>避免油炸、油煎食物</li>
+                <li>要求少油、少盐、少糖</li>
+              </ul>
+            </div>
+            
+            <div class="plan-card-section">
+              <h3>餐厅食物选择</h3>
+              
+              <h4>中式餐厅</h4>
+              <ul>
+                <li>清蒸鱼、白切鸡、蒸/水煮蔬菜、少量米饭</li>
+                <li>避免：红烧肉、糖醋排骨、炒饭</li>
+              </ul>
+              
+              <h4>西式餐厅</h4>
+              <ul>
+                <li>烤鸡胸肉沙拉、无酱汉堡（去面包上层）配蔬菜</li>
+                <li>避免：炸薯条、奶油意面、披萨</li>
+              </ul>
+              
+              <h4>日式餐厅</h4>
+              <ul>
+                <li>刺身、寿司（限量）、味增汤、烤鱼</li>
+                <li>避免：天妇罗、炸猪排</li>
+              </ul>
+              
+              <h4>快餐</h4>
+              <ul>
+                <li>优选沙拉、少量主食、去皮鸡肉</li>
+                <li>避免：炸鸡、薯条、甜饮料</li>
+              </ul>
+            </div>
+            
+            <div class="plan-card-section">
+              <h3>控制分量</h3>
+              <ul>
+                <li>主食（米饭/面条）控制在半碗到一小碗</li>
+                <li>蛋白质来源约手掌大小</li>
+                <li>蔬菜可以多吃</li>
+              </ul>
+            </div>
+            
+            <div class="plan-card-section">
+              <h3>点餐技巧</h3>
+              <ul>
+                <li>提前查看菜单，计划点什么</li>
+                <li>可以要求单独上酱料，自行控制用量</li>
+                <li>可以要求半份主食</li>
+                <li>用餐前喝一杯水</li>
+                <li>细嚼慢咽，感到七分饱即停止</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 家庭饮食指南 -->
+        <div id="home-guide" class="tab-content" style="display: none;">
+          <div class="card">
+            <h2>家庭饮食指南</h2>
+            <p>晚餐和早餐你可以在家自己准备，建议：</p>
+            
+            <div class="plan-card-section">
+              <h3>早餐选择</h3>
+              <ul>
+                <li>燕麦粥+蛋白质（鸡蛋/蛋白/豆浆）+少量水果</li>
+                <li>全麦面包+鸡蛋+蔬菜</li>
+                <li>蛋白质奶昔+坚果</li>
+              </ul>
+              
+              <h4>示例早餐</h4>
+              <ul>
+                <li>燕麦粥（40克干燕麦）+ 2个煮鸡蛋（只吃1个蛋黄）+ 1个小苹果 + 1杯无糖豆浆</li>
+                <li>全麦吐司2片 + 1个煮鸡蛋 + 2个蛋白 + 1/4个牛油果</li>
+              </ul>
+            </div>
+            
+            <div class="plan-card-section">
+              <h3>晚餐选择</h3>
+              <ul>
+                <li>瘦肉/鱼+蔬菜+少量主食</li>
+                <li>自制沙拉+蛋白质来源</li>
+                <li>清炖/清蒸菜肴</li>
+              </ul>
+              
+              <h4>示例晚餐</h4>
+              <ul>
+                <li>煎鸡胸肉（150克，用少量橄榄油）+ 炒西兰花和胡萝卜（250克）+ 1/4碗糙米饭（约50克干重）</li>
+                <li>清蒸鱼（150克）+ 炒青菜（200克）+ 1/4碗糙米饭（约50克干重）</li>
+              </ul>
+            </div>
+            
+            <div class="plan-card-section">
+              <h3>小食选择</h3>
+              <ul>
+                <li>水煮蛋</li>
+                <li>低脂酸奶</li>
+                <li>少量坚果</li>
+                <li>新鲜水果（适量）</li>
+              </ul>
+            </div>
+            
+            <div class="plan-card-section">
+              <h3>家庭食材准备</h3>
+              <ul>
+                <li>周末做好食材采购计划</li>
+                <li>可以提前准备部分食材（如煮好的鸡胸肉、切好的蔬菜）</li>
+                <li>准备便携餐盒，方便携带加餐</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 饮食习惯建议 -->
+        <div id="habits" class="tab-content" style="display: none;">
+          <div class="card">
+            <h2>饮食习惯建议</h2>
+            
+            <div class="plan-card-section">
+              <h3>进食节奏</h3>
+              <ul>
+                <li>细嚼慢咽，每口咀嚼20-30次</li>
+                <li>用20分钟以上时间完成一餐</li>
+                <li>感到七分饱即停止进食</li>
+                <li>定时进食，避免过度饥饿</li>
+              </ul>
+            </div>
+            
+            <div class="plan-card-section">
+              <h3>饮水习惯</h3>
+              <ul>
+                <li>每天至少饮用2.5-3升水</li>
+                <li>每餐前喝一杯水</li>
+                <li>感到饥饿时先喝水</li>
+                <li>可以喝无糖茶、咖啡（限量）</li>
+              </ul>
+            </div>
+            
+            <div class="plan-card-section">
+              <h3>记录习惯</h3>
+              <ul>
+                <li>使用食物日记记录每日摄入</li>
+                <li>记录饥饿感和情绪</li>
+                <li>每周评估进展</li>
+              </ul>
+            </div>
+            
+            <div class="plan-card-section">
+              <h3>心理策略</h3>
+              <ul>
+                <li>不要把食物分类为"好"或"坏"</li>
+                <li>允许适度享受喜爱的食物，但控制分量</li>
+                <li>避免情绪化进食</li>
+                <li>培养健康的食物关系</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 调整机制 -->
+        <div id="adjustment" class="tab-content" style="display: none;">
+          <div class="card">
+            <h2>调整机制</h2>
+            
+            <div class="plan-card-section">
+              <h3>何时调整计划</h3>
+              <ul>
+                <li>连续两周体重没有变化</li>
+                <li>感到过度饥饿或疲劳</li>
+                <li>运动表现明显下降</li>
+                <li>出现其他不适症状</li>
+              </ul>
+            </div>
+            
+            <div class="plan-card-section">
+              <h3>如何调整热量</h3>
+              <ul>
+                <li>如果减重停滞：可以进一步减少100-200卡路里/天</li>
+                <li>如果感到过度饥饿：可以增加100-200卡路里/天</li>
+                <li>最低不应低于1500卡路里/天</li>
+              </ul>
+            </div>
+            
+            <div class="plan-card-section">
+              <h3>如何调整宏量营养素</h3>
+              <ul>
+                <li>如果饥饿感强烈：可以增加蛋白质和纤维摄入</li>
+                <li>如果能量不足：可以适当增加碳水化合物</li>
+                <li>如果消化不适：可以调整膳食纤维摄入方式</li>
+              </ul>
+            </div>
+            
+            <div class="plan-card-section">
+              <h3>特殊情况处理</h3>
+              <ul>
+                <li>社交聚餐：选择健康选项，控制分量，前后几天稍微减少热量摄入</li>
+                <li>旅行：携带健康零食，选择健康餐厅，保持水分摄入</li>
+                <li>生病：暂停减肥计划，确保足够营养和休息</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 查看详细计划按钮 -->
+    <div style="text-align: center; margin: 2rem 0;">
+      <a href="diet-plan.html" class="btn btn-lg">查看详细30天饮食计划</a>
+    </div>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>© 2025 30天减肥计划 | 所有内容仅供参考，请在医生指导下进行减肥</div>
+      <ul class="footer-links">
+        <li><a href="about.html">关于</a></li>
+        <li><a href="faq.html">常见问题</a></li>
+        <li><a href="#" class="back-to-top">↑</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
